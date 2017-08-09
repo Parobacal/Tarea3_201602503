@@ -1,4 +1,4 @@
-package tarea3finalizadaconÃ©xito;
+package tarea3finalizadaconéxito;
 
 public class palindromo2 {
     public boolean espalindromo(String cadena){
@@ -25,4 +25,3 @@ public class palindromo2 {
     return valor;
 }
 }
-
