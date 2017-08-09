@@ -10,13 +10,12 @@ private static Scanner sc;
 	private static String usuario[] = new String[5];
 	public static void main(String[] args) {
         sc = new Scanner(System.in);
-        int op =0, h=0, pri=0;
+        int op =0, h=0;
         String letra;
         String nuevo;
         Scanner scan = new Scanner(System.in);
         Scanner teclado= new Scanner(System.in);
         Scanner s = new Scanner(System.in);
-        Scanner prin = new Scanner(System.in);
         Scanner sca = new Scanner(System.in);
         while(op != 3 ){
           
@@ -31,8 +30,7 @@ private static Scanner sc;
             
             switch (op){
             case (1):
-        
-                  while(h != 5 ){
+                while(h != 4 ){
             System.out.println("Menú de usuarios");
             System.out.println("\nSeleccione una opción");
             System.out.println("1. INGRESAR USUARIOS");
@@ -64,25 +62,20 @@ private static Scanner sc;
                     if (usuario[a].equals(letra)){
                      System.out.println(letra+"");   
                     }else{
-                    error =+1;                    
+                    error = error + 1; 
                     }
                     if (error == 5){
                      System.out.println("¡¡¡ERROR!!! No existe ningún usuario con esa coincidencia");
                     }
                     }   
-               break;  
-               
+                   break;  
                case(4):
-                  
                    break;
-                   
-                   case(5):
+               case(5):
                System.exit(0); 
-                break;     
+                   break;     
             }
-         
                   }
-                  
                   break;
             case (2):
                  palindromo2 objclass=new palindromo2();
@@ -102,11 +95,8 @@ private static Scanner sc;
                 break;
             default:
                 System.out.println("Opcion incorrecta.");
-                break;
-                                
+                break;                        
         }
         }
-
 	}
-
 }
